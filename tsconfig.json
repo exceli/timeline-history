@@ -1,11 +1,21 @@
 {
     "compilerOptions": {
+        "jsx": "react-jsx",
+        "baseUrl": "src",
         "target": "ES5",
         "module": "ESNext",
-        "jsx": "react",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "strict": true
-    }
+        "strict": true,
+        "paths": {
+            "@/app/*": ["app/*"],
+            "@/entities/*": ["entities/*"],
+            "@/features/*": ["features/*"],
+            "@/pages/*": ["pages/*"],
+            "@/shared/*": ["shared/*"],
+            "@/widgets/*": ["widgets/*"]
+        }
+    },
+    "include": ["src/**/*"]
 }
